@@ -1,0 +1,612 @@
+{
+  "style": [{
+      "elementType": "geometry",
+      "stylers": [{
+        "color": "#1d2c4d"
+      }]
+    },
+    {
+      "elementType": "labels.text.fill",
+      "stylers": [{
+        "color": "#8ec3b9"
+      }]
+    },
+    {
+      "elementType": "labels.text.stroke",
+      "stylers": [{
+        "color": "#1a3646"
+      }]
+    },
+    {
+      "featureType": "administrative.country",
+      "elementType": "geometry.stroke",
+      "stylers": [{
+        "color": "#4b6878"
+      }]
+    },
+    {
+      "featureType": "administrative.land_parcel",
+      "elementType": "labels.text.fill",
+      "stylers": [{
+        "color": "#64779e"
+      }]
+    },
+    {
+      "featureType": "administrative.province",
+      "elementType": "geometry.stroke",
+      "stylers": [{
+        "color": "#4b6878"
+      }]
+    },
+    {
+      "featureType": "landscape.man_made",
+      "elementType": "geometry.stroke",
+      "stylers": [{
+        "color": "#334e87"
+      }]
+    },
+    {
+      "featureType": "landscape.natural",
+      "elementType": "geometry",
+      "stylers": [{
+        "color": "#023e58"
+      }]
+    },
+    {
+      "featureType": "poi",
+      "elementType": "geometry",
+      "stylers": [{
+        "color": "#283d6a"
+      }]
+    },
+    {
+      "featureType": "poi",
+      "elementType": "labels.text.fill",
+      "stylers": [{
+        "color": "#6f9ba5"
+      }]
+    },
+    {
+      "featureType": "poi",
+      "elementType": "labels.text.stroke",
+      "stylers": [{
+        "color": "#1d2c4d"
+      }]
+    },
+    {
+      "featureType": "poi.park",
+      "elementType": "geometry.fill",
+      "stylers": [{
+        "color": "#023e58"
+      }]
+    },
+    {
+      "featureType": "poi.park",
+      "elementType": "labels.text.fill",
+      "stylers": [{
+        "color": "#3C7680"
+      }]
+    },
+    {
+      "featureType": "road",
+      "elementType": "geometry",
+      "stylers": [{
+        "color": "#304a7d"
+      }]
+    },
+    {
+      "featureType": "road",
+      "elementType": "labels.text.fill",
+      "stylers": [{
+        "color": "#98a5be"
+      }]
+    },
+    {
+      "featureType": "road",
+      "elementType": "labels.text.stroke",
+      "stylers": [{
+        "color": "#1d2c4d"
+      }]
+    },
+    {
+      "featureType": "road.highway",
+      "elementType": "geometry",
+      "stylers": [{
+        "color": "#2c6675"
+      }]
+    },
+    {
+      "featureType": "road.highway",
+      "elementType": "geometry.stroke",
+      "stylers": [{
+        "color": "#255763"
+      }]
+    },
+    {
+      "featureType": "road.highway",
+      "elementType": "labels.text.fill",
+      "stylers": [{
+        "color": "#b0d5ce"
+      }]
+    },
+    {
+      "featureType": "road.highway",
+      "elementType": "labels.text.stroke",
+      "stylers": [{
+        "color": "#023e58"
+      }]
+    },
+    {
+      "featureType": "transit",
+      "elementType": "labels.text.fill",
+      "stylers": [{
+        "color": "#98a5be"
+      }]
+    },
+    {
+      "featureType": "transit",
+      "elementType": "labels.text.stroke",
+      "stylers": [{
+        "color": "#1d2c4d"
+      }]
+    },
+    {
+      "featureType": "transit.line",
+      "elementType": "geometry.fill",
+      "stylers": [{
+        "color": "#283d6a"
+      }]
+    },
+    {
+      "featureType": "transit.station",
+      "elementType": "geometry",
+      "stylers": [{
+        "color": "#3a4762"
+      }]
+    },
+    {
+      "featureType": "water",
+      "elementType": "geometry",
+      "stylers": [{
+        "color": "#0e1626"
+      }]
+    },
+    {
+      "featureType": "water",
+      "elementType": "labels.text.fill",
+      "stylers": [{
+        "color": "#4e6d70"
+      }]
+    }
+  ],
+
+  "item": [
+
+    {
+      "name": "Galata Kulesi",
+      "name2":"Galata Tower",
+      "latitude": 41.02720409984263,
+      "longitude": 28.97431506407573,
+      "sehir": "İstanbul",
+      "city": "galataTower"
+    },
+    {
+      "name": "Ortaköy Camii",
+      "name2":"Ortakoy Mosque",
+      "latitude": 41.04770430536809,
+      "longitude": 29.027299961614098,
+      "sehir": "İstanbul",
+      "city": "Ortakoy"
+    },
+    {
+      "name": "Ayasofya Camii",
+      "name2":"Hagia Sophia Mosque",
+      "latitude": 41.00879345799526,
+      "longitude": 28.98014281995344,
+      "sehir": "İstanbul",
+      "city": "Ayasofya"
+    },
+    {
+      "name": "Topkapı Sarayı",
+      "name2":"",
+      "latitude": 41.011665182436225,
+      "longitude": 28.983357446709103,
+      "sehir": "İstanbul",
+      "city": "Topkapi"
+    },
+    {
+      "name": "Sultanahmet Camii",
+      "name2":"Blue Mosque",
+      "latitude": 41.00660433676049,
+      "longitude": 28.97718618785826,
+      "sehir": "İstanbul",
+      "city": "Sultanahmet"
+    },
+    {
+      "name": "Dolmabahçe Sarayı",
+      "name2":"Dolmabahce Palace",
+      "latitude": 41.03930992085005,
+      "longitude": 29.000459404529447,
+      "sehir": "İstanbul",
+      "city": "Dolmabahce"
+    }, {
+      "name": "Fethi Paşa Korusu",
+      "name2":"Fethi Pasa Grove ",
+      "latitude": 41.032582002733825,
+      "longitude": 29.026809591691645,
+      "sehir": "İstanbul",
+      "city": "FethiPasa"
+    },
+    {
+      "name": "Kapalıçarşı",
+      "name2":"Grand Bazaar",
+      "latitude": 41.01079000297118,
+      "longitude": 28.96815393417088,
+      "sehir": "İstanbul",
+      "city": "Kapali"
+    },
+    {
+      "name": "Kız Kulesi",
+      "name2":"Kiz Tower",
+      "latitude": 41.02134010960318,
+      "longitude": 29.00422852481127,
+      "sehir": "İstanbul",
+      "city": "KizKulesi"
+    },
+    {
+      "name": "Taksim Meydanı",
+      "name2":"Taksim Square",
+      "latitude": 41.03758376648337,
+      "longitude": 28.98496302399836,
+      "sehir": "İstanbul",
+      "city": "Taksim"
+    },
+    {
+      "name": "Rumeli Hisarı",
+      "name2":"Rumeli Fortress ",
+      "latitude": 41.08511561878602,
+      "longitude": 29.05676109179416,
+      "sehir": "İstanbul",
+      "city": "Rumeli"
+    },
+    {
+      "name": "Sent Antuan Kilisesi",
+      "name2":"Sent Antuan Church",
+      "latitude": 41.03404969192058,
+      "longitude": 28.97684926260145,
+      "sehir": "İstanbul",
+      "city": "SentAntuan"
+    },
+    {
+      "name": "Eyüp",
+      "name2":"Eyup",
+      "latitude": 41.049009688809384, 
+      "longitude":28.93385319120989,
+      "sehir": "İstanbul",
+      "city": "Eyup"
+    },
+    {
+      "name": "Pierre Loti",
+      "name2":"Pierre Loti Hill",
+      "latitude": 41.05500796010647, 
+      "longitude":28.93393067886831,
+      "sehir": "İstanbul",
+      "city": "PierreLoti"
+    },
+    {
+      "name": "Aşıklar Vadisi",
+      "name2":"Lovers Valley",
+      "latitude": 38.66082930126842, 
+      "longitude": 34.81968777812984,
+      "sehir": "Nevsehir",
+      "city": "Asiklar"
+    },
+    {
+      "name": "Derinkuyu",
+      "name2":"Derinkuyu",
+      "latitude": 38.37356832769235,
+      "longitude":34.73510187462083,
+      "sehir": "Nevsehir",
+      "city": "Derinkuyu"
+    },  {
+      "name": "Göreme Açık Hava Müzesi",
+      "name2":"Goreme O.A.M",
+      "latitude": 38.640149620186804, 
+      "longitude":34.84538688937303,
+      "sehir": "Nevsehir",
+      "city": "GoremeAcik"
+    },
+    {
+      "name": "Göreme Panaroma",
+      "name2":"Goreme Panaroma",
+      "latitude": 38.641715704887545,  
+      "longitude":34.818104491768814,
+      "sehir": "Nevsehir",
+      "city": "GoremePan"
+    },
+    {
+      "name": "Guvercinlik Vadisi",
+      "name2":"Guvercinlik Valley",
+      "latitude": 38.62009059158219 ,
+      "longitude":34.80498467617173,
+      "sehir": "Nevsehir",
+      "city": "Guvercinlik"
+    },
+    {
+      "name": "Peri Bacaları",
+      "name2":"Fairy Chimney",
+      "latitude": 38.63554705755083,  
+      "longitude":34.89079721967594 ,
+      "sehir": "Nevsehir",
+      "city": "PeriBacalari"
+    },
+{
+      "name": "Sunset",
+      "name2":"Sunset Point",
+      "latitude": 38.641769116712034,
+      "longitude": 34.83214154601603,
+      "sehir": "Nevsehir",
+      "city": "Sunset"
+    },
+    {
+      "name": "Zelve Acik Hava Müzesi",
+      "name2":"Zelve O.A.M",
+      "latitude":  38.669430587153876, 
+      "longitude": 34.86322511714896 ,
+      "sehir": "Nevsehir",
+      "city": "ZelveAcik"
+    },
+    {
+      "name": "Acemhöyük",
+      "name2":"Acemhoyuk",
+      "latitude": 38.41161332704846,
+      "longitude":33.835844404308915,
+      "sehir": "Aksaray",
+      "city": "Acemhoyuk"
+    },
+    {
+      "name": "Hasandagı",
+      "name2":"Hasandaği Mountain",
+      "latitude": 38.204900377821154, 
+      "longitude": 34.20948736656161,
+      "sehir": "Aksaray",
+      "city": "Hasandagi"
+    },
+    {
+      "name": "Ihlara Vadisi",
+      "name2":"Ihlara Valley",
+      "latitude": 38.23868678144573, 
+      "longitude":34.306377520887985,
+      "sehir": "Aksaray",
+      "city": "Ihlara"
+    },
+    {
+      "name": "Manastırlar Vadisi",
+      "name2":"Monastert Valley",
+      "latitude":  38.275926682952345, 
+      "longitude": 34.37156407596421,
+      "sehir": "Aksaray",
+      "city": "Manastirlar"
+    },
+    {
+      "name": "Narlı Göl",
+      "name2":"Narli Lake",
+      "latitude": 38.3403927441779,
+      "longitude": 34.457263407613624,
+      "sehir": "Aksaray",
+      "city": "NarliGol"
+    },
+    {
+      "name": "Nora Antik Kenti",
+      "name2":"Nora Ancient City ",
+      "latitude": 38.18982056029762, 
+      "longitude": 34.20420408562671,
+      "sehir": "Aksaray",
+      "city": "NoraAntik"
+    },
+    {
+      "name": "Sultanhanı'",
+      "name2":"Sultanhani",
+      "latitude":  38.24916370079894, 
+      "longitude": 33.547276302624844,
+      "sehir": "Aksaray",
+      "city": "Sultanhani"
+    },
+    {
+      "name": "Tuz Gölü",
+      "name2":"Salt Lake",
+      "latitude": 38.78746946543565, 
+      "longitude":  33.35591018949351 ,
+      "sehir": "Aksaray",
+      "city": "TuzGolu"
+    },
+    {
+      "name": "Atatürk Köşkü",
+      "name2":"Ataturk Mansion",
+      "latitude":  40.979901897506934, 
+      "longitude":  39.69755189260497,
+      "sehir": "Trabzon",
+      "city": "AtatürkK"
+    },
+    {
+      "name": "Ayassofya Müzesi",
+      "name2":"Hagia Sophia Museum",
+      "latitude": 41.00317250400328, 
+      "longitude": 39.696089375351626 ,
+      "sehir": "Trabzon",
+      "city": "AyasofyaTra"
+    },
+    {
+      "name": "Sümela",
+      "name2":"Sumela Monastery",
+      "latitude":  40.69030966581434, 
+      "longitude": 39.65840563471876 ,
+      "sehir": "Trabzon",
+      "city": "Sümela"
+    },
+    {
+      "name": "Hamsiköy",
+      "name2":"Hamsikoy(Village)",
+      "latitude": 40.68541523246212,
+      "longitude": 39.47888991799439,
+      "sehir": "Trabzon",
+      "city": "Hamsiköy"
+    },
+    {
+      "name": "Uzungöl",
+      "name2":"Uzungol",
+      "latitude": 40.62004746390864,
+      "longitude": 40.295680860191936,
+      "sehir": "Trabzon",
+      "city": "Uzungöl"
+    },
+    {
+      "name": "Şahinkaya",
+      "name2":"Sahinkaya",
+      "latitude": 40.73429969441273,
+      "longitude":40.223959030601065,
+      "sehir": "Trabzon",
+      "city": "Sahinkaya"
+    },
+    {
+      "name": "Çal Mağarası",
+      "name2":"Cal Cave",
+      "latitude": 40.86537466000934, 
+      "longitude": 39.37952057669389,
+      "sehir": "Trabzon",
+      "city": "CalMag"
+    },
+    {
+      "name": "Boztepe",
+      "name2":"Boztepe(Hill)",
+      "latitude": 40.99928211777208, 
+      "longitude": 39.733896345935015,
+      "sehir": "Trabzon",
+      "city": "Boztepe"
+    },
+    {
+      "name": "Hıdırnebi",
+      "name2":"Hidirnebi Plateau",
+      "latitude": 40.958336115027976,
+      "longitude": 39.4365590038885 ,
+      "sehir": "Trabzon",
+      "city": "Hıdırnebi"
+    },
+    {
+      "name": "Küçük Ayvasıl Kilisesi",
+      "name2":"Little Ayvasil Chuch",
+      "latitude":41.006191471566936, 
+      "longitude":  39.723319350604164,
+      "sehir": "Trabzon",
+      "city": "Ayvasil"
+    },
+    {
+      "name": "Şolma Yaylası",
+      "name2":"Solma Plateau",
+      "latitude":  40.85971177361188,
+      "longitude": 39.54450019032253,
+      "sehir": "Trabzon",
+      "city": "Solma"
+    }, {
+      "name": "Erikbeli Yaylası",
+      "name2":"Erilkbeli Plateau",
+      "latitude":   40.767998502982856, 
+      "longitude":39.23443177664066 ,
+      "sehir": "Trabzon",
+      "city": "Erikbeli"
+    },
+     {
+      "name": "Sis Dağı Yaylası",
+      "name2":"Frog Mountain Plateau",
+      "latitude": 40.88273065630017, 
+      "longitude":  39.19367589448675  ,
+      "sehir": "Trabzon",
+      "city": "SisDag"
+    }, 
+    {
+      "name": "Amasya Kalesi",
+      "name2":"Amasya Castle",
+      "latitude":40.655595425619104,
+      "longitude":  35.82690816415083,
+      "sehir": "Amasya",
+      "city": "AmasKale"
+    },
+    {
+      "name": "Ferhat İle Şirin Aşıklar Müzesi",
+      "name2":"Ferhat and Sirin L.M.",
+      "latitude":40.63343829412282,
+      "longitude": 35.813545806891504,
+      "sehir": "Amasya",
+      "city": "FerhatSirin"
+    },
+    {
+      "name": "Pontus Kralları Kaya Mezarları",
+      "name2":"Pontus Kings Rock Tombs",
+      "latitude": 40.65374747069293,
+      "longitude":  35.83042593336294 ,
+      "sehir": "Amasya",
+      "city": "HarsenaKaya"
+    },
+    {
+      "name": "Hazeranlar Konağı",
+      "name2":"Harezanlar Mansion",
+      "latitude": 40.65257438888466,  
+      "longitude":  35.830031353363026,
+      "sehir": "Amasya",
+      "city": "Hazeranlar"
+    },
+    {
+      "name": "Saraydüzü ",
+      "name2":"Sarayduzu Barracks",
+      "latitude": 40.65916782320242, 
+      "longitude":35.83615502050137 ,
+      "sehir": "Amasya",
+      "city": "Sarayduzu"
+    },
+    {
+      "name": "Şehzadeler Müzesi",
+      "name2":"Princes Museum",
+      "latitude": 40.65244526842659,  
+      "longitude":  35.83036519658536,
+      "sehir": "Amasya",
+      "city": "Sehzadeler"
+    },
+    {
+      "name": "Yalıboyu Evleri",
+      "name2":"Yaliboyu Houses",
+      "latitude":40.65242947053351, 
+      "longitude": 35.8305929227456,
+      "sehir": "Amasya",
+      "city": "Yalıboyu"
+    },
+    {
+      "name": "Yedi Kuğular Kuş Cenneti",
+      "name2":"Yedi Kugular Bird Sanctuary",
+      "latitude": 40.79072944082926, 
+      "longitude":35.57921495954306 ,
+      "sehir": "Amasya",
+      "city": "Yedikugu"
+    },
+    {
+      "name": "II. Bayezid Külliyesi",
+      "name2":"II. Bayezid Complex",
+      "latitude": 40.65041061821169, 
+      "longitude":35.82662890474539 ,
+      "sehir": "Amasya",
+      "city": "Bayezid"
+    }
+    
+    
+
+    
+
+
+
+
+  ]
+
+
+
+
+
+}
