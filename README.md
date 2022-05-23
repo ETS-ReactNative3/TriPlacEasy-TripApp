@@ -54,7 +54,7 @@ https://play.google.com/store/apps/details?id=com.TripEZ
 
 
 
-### 🤝 Contributes&Donates
+### 🤝 Contributes
 
 > 😊 Give me any advice by sending email!
 >
