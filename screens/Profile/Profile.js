@@ -17,6 +17,7 @@ import LinearGradient from 'react-native-linear-gradient';
 const Profile=(props)=>{
     const [namee,setNamee]=useState('')
     const [langg,setLangg]=useState('tr')
+    const [gName,setGName]=useState('')
     database()
     .ref('/data'+'/'+auth().currentUser.uid)
 .on('value',snapshot => {
@@ -87,7 +88,14 @@ currentUser.updateEmail(values.email).then((res)=>{
     })
 
 }
+useEffect(()=>{
+  database()
+  .ref('/Users'+'/'+auth().currentUser.uid)
+.on('value',snapshot => {
+setGName(snapshot.val().UserAd)
+})
 
+},[])
 const [modalVisible3,setVisible3]=useState(false)
 
 
@@ -103,7 +111,7 @@ const setModalVisible3 = (visible) => {
     const [color,setColor]=useState('#a7f6d3')
     const [color2,setColor2]=useState('#47856d')
     const [lang,setLand]=useState('tr')
-
+  
     database()
     .ref('data'+'/'+currentUser.uid)
     .update({
@@ -187,14 +195,15 @@ const setModalVisible3 = (visible) => {
     
        
     }}> {langg=='tr'?'Misafir Kullanıcı' :'Guest User'}</Text>
-    <Text style={{
-        fontSize:15,
+     <Text style={{
+        fontSize:25,
      
        alignSelf:'center',
         color:color2,
     
        
-    }}>{currentUser.uid}</Text>
+    }}>{gName}</Text>
+   
     <TouchableOpacity
 style={
 {  alignItems:'center',

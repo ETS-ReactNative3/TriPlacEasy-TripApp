@@ -15,19 +15,34 @@ const Register=(props)=>{
    
     
 const [name,setName]=useState('')
-
-
+const[mail,setMail]=useState('')
+const [pass,setPass]=useState('')
+const infos=()=>{
+    database()
+    .ref('/Users'+'/'+auth().currentUser.uid)
+    .update({
+      
+      UserAd:isim,
+      UserMail:mail,
+      UserPass:sifre,
+    
+      
+    })
+  }
 
 
   auth().createProfileChan
     const register =(values,{setSubmitting,resetForm})=>{
         setName(values.name)
+        setMail(values.mail)
+        setPass(values.password)
 // setSubmitting(false)
 // resetForm({});
 
 try{
  auth().createUserWithEmailAndPassword(values.email,values.password)
  //mail verification
+
  .then((userCredential)=>{
    
   userCredential.user.sendEmailVerification();
@@ -37,7 +52,7 @@ try{
  .then(() => {
   resetForm({})
     //Kullanıcı kayıt olduysa
-    
+    infos()
    props.navigation.navigate('homepage')
   })
 
@@ -82,7 +97,7 @@ catch(e)
   })
   .then(() => console.log(name));
 
-
+console.log(values.name)
  
  
 
@@ -97,7 +112,7 @@ catch(e)
       name:'',
      
   }}
-  
+ 
   onSubmit={register}
   
   validationSchema={
@@ -108,7 +123,9 @@ catch(e)
     
     })
   }
+  
   >
+     
 {({values,handleSubmit,errors,handleChange,isValid,isSubmitting})=>(
 
     <View style={style.forminput}>

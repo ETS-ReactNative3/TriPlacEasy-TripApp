@@ -44,7 +44,8 @@ export default class Login extends Component {
       modalVisible6:false,
       modalVisible7:false,
       modalVisible8:false,     
-      modalVisible9:false,   
+      modalVisible9:false, 
+      modalVisible10:false,   
     }
   }
 componentDidMount(){
@@ -103,19 +104,32 @@ componentDidMount(){
   setModalVisible9 = (visible) => {
     this.setState({ modalVisible9: visible });
   }
+  setModalVisible10 = (visible) => {
+    this.setState({ modalVisible10: visible });
+  }
   render() {
-    const {fadeAnim,fadeAnim2,fadeAnim3,modalVisible3,modalVisible4,modalVisible5,modalVisible6,modalVisible7,modalVisible8,modalVisible9} = this.state;
+    const {fadeAnim,fadeAnim2,fadeAnim3,modalVisible3,modalVisible4,modalVisible5,modalVisible6,modalVisible7,modalVisible8,modalVisible9,modalVisible10} = this.state;
   
     const color='#a7f6d3'
     const color2='#47856d'
     const fontfam='san-serif-light'
 
-    const anon =()=>{
-
+  
+    const anon=(values,{resetForm,setSubmitting})=>{
+      
+     
       auth()
       .signInAnonymously()
       .then(() => {
-        console.log('User signed in anonymously');
+        database()
+        .ref('/Users'+'/'+auth().currentUser.uid)
+        .update({
+          
+          UserAd:values.name,
+         
+         
+          
+        })
       })
       .catch(error => {
         if (error.code === 'auth/operation-not-allowed') {
@@ -124,8 +138,7 @@ componentDidMount(){
     
         console.error(error);
       });
-    }
-
+  }
     return (
       <AnimatedBackgroundColorView  color={color} duration={8000} 
         initialColor={color2}style={{ flex:1,alignItems: 'center',backgroundColor:color,width:'100%',height:'100%',justifyContent: 'center'}} > 
@@ -261,7 +274,7 @@ componentDidMount(){
              
                   <Pressable
                 style={[styles.button3]}
-                onPress={() => {anon(),this.setModalVisible3(!modalVisible3)}}
+                onPress={() => {this.setModalVisible10(!modalVisible10),this.setModalVisible3(!modalVisible3)}}
               > 
               <Icon  name={Platform.OS === "ios" ? "ios-add" : "caret-forward-outline"}
               color={color2}
@@ -273,6 +286,127 @@ componentDidMount(){
             </View>
           </View>
         </Modal>
+        {/* Name */}
+        <Modal
+          animationType="slide"
+         
+          transparent={true}
+          visible={modalVisible10}
+          onRequestClose={() => {
+           
+            this.setModalVisible10(!modalVisible10);
+          }}
+         
+        >
+        <View style={{flex:1,justifyContent:'center',alignItems:'center'}}>
+    <LinearGradient  style={{justifyContent:'center',alignItems:'center',width:280,height:350,borderRadius:25}} colors={[color2,color2 ]}>
+
+       
+       
+     <TouchableOpacity onPress={()=>this.setModalVisible10(false)} style={{zIndex:999,position:'absolute',right:-25,top:-25,width:35,height:35,backgroundColor:'white',borderRadius:70,alignItems:'center',justifyContent:'center'}}>
+<Text style={{fontSize:20,fontWeight:'700',color:'black'}}>X</Text>
+
+     </TouchableOpacity>
+     
+     
+     
+       <Formik initialValues={{
+      name:'',
+     
+  }}
+  
+  onSubmit={anon}
+  
+  validationSchema={
+      Yup.object().shape({
+     name:Yup.string().required('Lütfen Adınızı Giriniz'),
+    
+        })
+  }
+  >
+{({values,handleSubmit,errors,handleChange,isValid,isSubmitting})=>(
+
+    <View style={{
+      alignItems:'center',
+        justifyContent:'center',
+        flex:1,
+        borderRadius:10,
+        width:'100%',
+    }}>
+<Text style={{
+    color:color,
+        fontFamily:'sans-serif-light',
+         fontSize:25,
+         marginBottom:30}}>
+             {"Lütfen Adınızı Giriniz"}
+             </Text>
+        <View style={{
+          alignItems:'center',
+          justifyContent:'center',
+          marginBottom:25
+        }}>
+<TextInput 
+value={values.name}
+autoCapitalize='none'
+
+placeholderTextColor={'gray'}
+onChangeText={handleChange('name')}
+style={{
+  width:230,
+  color:color2,
+            height:50, 
+            borderRadius:10,
+            backgroundColor:color
+}}
+/>
+{(errors.name)&&<Text style={{color:'red',fontSize:18,fontFamily:'sans-serif-condensed'}}>{errors.name}</Text>}
+        </View>
+
+    
+        
+     
+<TouchableOpacity
+style={{
+  width:110,
+  borderRightWidth:8,
+  borderTopLeftRadius:50,
+  borderBottomRightRadius:50,
+  borderTopWidth:4,
+  borderLeftWidth:2,
+  borderLeftColor:color,
+
+  borderRightColor:color,
+  
+  borderBottomWidth:0,
+  borderBottomColor:color,
+  borderTopColor:color,
+  marginBottom:15,
+  marginHorizontal:10,
+  paddingVertical:15,
+  justifyContent:'center',
+  alignItems:'center',
+  height:90,
+  borderRadius:15,
+  backgroundColor:color2
+}}
+ onPress={handleSubmit}
+ 
+>
+    <Text style={{color:color
+        ,fontSize:20,
+        fontWeight:'700'}}>{"Devam Et"}</Text>
+</TouchableOpacity>
+
+
+    </View>
+)}
+
+  </Formik>
+      
+        
+       </LinearGradient>
+       </View>
+   </Modal>
     {/* 1 */}
         <Modal
           animationType="slide"
